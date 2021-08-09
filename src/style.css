@@ -1,0 +1,192 @@
+/* General Styles */
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #03045e;
+}
+a:visited {
+  color: #adb5bd;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Cabin";
+}
+h1 {
+  padding: 20px 0 0 0;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+
+p {
+  padding: 10px;
+}
+.container {
+  max-width: 975px;
+  margin: 50px auto auto;
+}
+/* Morning, Day and Night Mode Styles */
+.morning {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  color: #000;
+}
+.day {
+  background-image: linear-gradient(to top, #90e0ef 0%, #fff 100%);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+.day h1 {
+  color: #03045e;
+}
+.day h2 {
+  color: #90e0ef;
+  font-size: 24px;
+}
+.day h5 {
+  color: #03045e;
+}
+
+.day h6 {
+  color: #00b4d8;
+}
+.morning #current-time {
+  color: #000;
+}
+.morning #hourly-forecast-display h4 {
+  color: #000;
+}
+
+.morning .wind-conditions h2 {
+  color: #000;
+}
+
+.night {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+.night h1,
+h2 {
+  color: white;
+}
+.night h2 {
+  font-size: 24px;
+}
+.night #coded-by {
+  color: #000;
+}
+.night .temp-rain .active {
+  color: #fff;
+  cursor: default;
+}
+/*Temperature, City and Time Display*/
+
+#cels-convert,
+#fahr-convert,
+#convert-slash {
+  font-size: 16px;
+}
+
+.converted-temp {
+  font-weight: lighter;
+  color: #90e0ef;
+}
+
+.temp-rain {
+  position: relative;
+  top: -25px;
+  text-align: right;
+}
+
+.temp-rain .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.temp-rain .active:hover {
+  text-decoration: none;
+}
+
+.wind-conditions h2 {
+  text-align: right;
+  position: relative;
+  top: -25px;
+  font-size: 18px;
+}
+/* Forecast Display */
+.card {
+  position: relative;
+  top: -50px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.forecast-day {
+  font-size: 16px;
+}
+#hourly-forecast-display {
+  text-align: center;
+}
+#hourly-forecast-display h4 {
+  color: #03045e;
+}
+
+/*Search area*/
+
+.btn-light:hover {
+  background: #e1e6ea;
+}
+.search-bar {
+  margin: 25px 0;
+  padding: 0;
+  color: #03045e;
+}
+#city-input {
+  width: 80%;
+}
+#locate-me-button {
+  text-align: right;
+  margin: 25px 0 0 0;
+}
+#search-area {
+  position: relative;
+  top: -50px;
+}
+#submit-button {
+  position: relative;
+  top: -2px;
+}
+
+/*Footer*/
+#coded-by {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#updates {
+  font-size: 12px;
+  font-style: italic;
+}
